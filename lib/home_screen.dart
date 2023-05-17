@@ -12,24 +12,30 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Container(
-              width: double.infinity,
-              height: 300,
-               decoration: BoxDecoration(borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(45),bottomRight: Radius.circular(45)),color: Colors.blue[900],),
+                width: double.infinity,
+                height: 300,
+                decoration: BoxDecoration(
+                  borderRadius: const BorderRadius.only(
+                      bottomLeft: Radius.circular(45),
+                      bottomRight: Radius.circular(45)),
+                  color: Colors.blue[900],
+                ),
                 child: Image.asset("assets/images/im.png")),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 50,vertical: 20),
+              padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
               child: Text(
                 "Login",
                 style: TextStyle(
                     color: Colors.blue[900],
                     fontSize: 60,
                     fontFamily: "bold",
-                    fontWeight:FontWeight.w900 ),
+                    fontWeight: FontWeight.w900),
               ),
             ),
             // const SizedBox(height: 40,),
             Padding(
-                padding:const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
                 child: TextFormField(
                   style: const TextStyle(color: Colors.white, fontSize: 18),
                   keyboardType: TextInputType.name,
@@ -62,10 +68,14 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            Container(width: double.infinity,height: 45,padding: const EdgeInsets.symmetric(horizontal: 30),
+            Container(
+              width: double.infinity,
+              height: 45,
+              padding: const EdgeInsets.symmetric(horizontal: 30),
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 50),
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 10, horizontal: 50),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30)),
                       backgroundColor: Colors.indigo),
