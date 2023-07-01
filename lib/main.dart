@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:montada/ex.dart';
+import 'package:montada/ex1.dart';
+import 'package:montada/ex2.dart';
 import 'package:montada/home_screen.dart';
 
 void main() {
@@ -11,10 +14,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      home:  HomeScreen(),
+      home: Ex1(),
     );
   }
 }
