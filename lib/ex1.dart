@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 class ex1 extends StatelessWidget {
+  const ex1({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Text('Login Page'),
+        leading: const Text('Login Page'),
       ),
       body: SingleChildScrollView(
         child: Column(

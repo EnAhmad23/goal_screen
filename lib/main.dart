@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:montada/ex.dart';
-import 'package:montada/ex1.dart';
-import 'package:montada/ex2.dart';
-import 'package:montada/home_screen.dart';
+import 'package:montada/BMI/home.dart';
+import 'package:montada/quize%20app/lastPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,10 +12,16 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      home: Ex1(),
+      // home: const page1(),
+      initialRoute: '/',
+
+      routes: {
+        '/': (context) => const home(),
+        '/2': (context) => const LastPage()
+      },
     );
   }
 }
@@ -93,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
         ),

@@ -1,7 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Ex extends StatefulWidget {
+  const Ex({super.key});
+
   @override
   State<StatefulWidget> createState() => _Ex();
 }
@@ -69,7 +70,9 @@ class _Ex extends State<Ex> {
                       int yearsToDouble;
                       for (yearsToDouble = 0;
                           temp <= 2 * count;
-                          yearsToDouble++) temp *= 1 + earnsByYear;
+                          yearsToDouble++) {
+                        temp *= 1 + earnsByYear;
+                      }
                       output =
                           'The number of the yearsToDouble to double your account : $yearsToDouble ';
                     }),

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Ex1 extends StatelessWidget {
@@ -10,20 +9,20 @@ class Ex1 extends StatelessWidget {
       body: SingleChildScrollView(
         child: SafeArea(
             child: Container(
-          color: Color.fromARGB(255, 238, 228, 228),
+          color: const Color.fromARGB(255, 238, 228, 228),
           child: Column(
             children: [
               Container(
-                margin: EdgeInsets.only(bottom: 30),
-                padding: EdgeInsets.only(top: 60, bottom: 10, left: 10),
+                margin: const EdgeInsets.only(bottom: 30),
+                padding: const EdgeInsets.only(top: 60, bottom: 10, left: 10),
                 decoration: const BoxDecoration(
                     borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(30),
                         bottomRight: Radius.circular(30)),
                     color: Colors.white),
-                child: Row(
+                child: const Row(
                   children: [
-                    const Text(
+                    Text(
                       '18 ',
                       style: TextStyle(
                           color: Colors.black,
@@ -31,7 +30,7 @@ class Ex1 extends StatelessWidget {
                           fontWeight: FontWeight.w800),
                     ),
                     Column(
-                      children: const [
+                      children: [
                         Text(
                           'Friday',
                           style: TextStyle(
@@ -50,9 +49,9 @@ class Ex1 extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 20),
+                margin: const EdgeInsets.symmetric(horizontal: 20),
                 padding:
-                    EdgeInsets.only(top: 20, bottom: 25, left: 10, right: 10),
+                    const EdgeInsets.only(top: 20, bottom: 25, left: 10, right: 10),
                 decoration: const BoxDecoration(
                     borderRadius: BorderRadius.only(
                         topRight: Radius.circular(40),
@@ -60,11 +59,11 @@ class Ex1 extends StatelessWidget {
                         bottomLeft: Radius.circular(30),
                         bottomRight: Radius.circular(30)),
                     color: Color.fromARGB(255, 62, 189, 85)),
-                child: Column(
+                child: const Column(
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
+                      children: [
                         Text(
                           'In the moring ',
                           style: TextStyle(
@@ -79,11 +78,11 @@ class Ex1 extends StatelessWidget {
                         )
                       ],
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 20,
                     ),
                     Row(
-                      children: const [
+                      children: [
                         Icon(
                           Icons.circle_outlined,
                           color: Colors.white,
@@ -97,11 +96,11 @@ class Ex1 extends StatelessWidget {
                         )
                       ],
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 20,
                     ),
                     Row(
-                      children: const [
+                      children: [
                         Icon(
                           Icons.check_circle,
                           color: Colors.white,
@@ -127,9 +126,9 @@ class Ex1 extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
                 padding:
-                    EdgeInsets.only(top: 20, bottom: 25, left: 10, right: 10),
+                    const EdgeInsets.only(top: 20, bottom: 25, left: 10, right: 10),
                 decoration: const BoxDecoration(
                     borderRadius: BorderRadius.only(
                         topRight: Radius.circular(40),
@@ -137,11 +136,11 @@ class Ex1 extends StatelessWidget {
                         bottomLeft: Radius.circular(30),
                         bottomRight: Radius.circular(30)),
                     color: Colors.white),
-                child: Column(
+                child: const Column(
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
+                      children: [
                         Text(
                           'After work ',
                           style: TextStyle(
@@ -156,11 +155,11 @@ class Ex1 extends StatelessWidget {
                         )
                       ],
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 20,
                     ),
                     Row(
-                      children: const [
+                      children: [
                         Icon(
                           Icons.check_circle_outline,
                           color: Colors.grey,
@@ -174,11 +173,11 @@ class Ex1 extends StatelessWidget {
                         )
                       ],
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 20,
                     ),
                     Row(
-                      children: const [
+                      children: [
                         Icon(
                           Icons.check_circle,
                           color: Colors.grey,
@@ -193,11 +192,11 @@ class Ex1 extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 20,
                     ),
                     Row(
-                      children: const [
+                      children: [
                         Icon(
                           Icons.check_circle_outline,
                           color: Colors.grey,
@@ -219,9 +218,9 @@ class Ex1 extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 20),
+                margin: const EdgeInsets.symmetric(horizontal: 20),
                 padding:
-                    EdgeInsets.only(top: 20, bottom: 25, left: 10, right: 20),
+                    const EdgeInsets.only(top: 20, bottom: 25, left: 10, right: 20),
                 decoration: const BoxDecoration(
                     borderRadius: BorderRadius.only(
                         topRight: Radius.circular(40),
@@ -229,11 +228,11 @@ class Ex1 extends StatelessWidget {
                         bottomLeft: Radius.circular(30),
                         bottomRight: Radius.circular(30)),
                     color: Color.fromARGB(255, 141, 81, 253)),
-                child: Column(
+                child: const Column(
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
+                      children: [
                         Text(
                           'Going to bad ',
                           style: TextStyle(
@@ -248,11 +247,11 @@ class Ex1 extends StatelessWidget {
                         )
                       ],
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 20,
                     ),
                     Row(
-                      children: const [
+                      children: [
                         Icon(
                           Icons.circle_outlined,
                           color: Colors.white,
@@ -266,11 +265,11 @@ class Ex1 extends StatelessWidget {
                         )
                       ],
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 20,
                     ),
                     Row(
-                      children: const [
+                      children: [
                         Icon(
                           Icons.check_circle,
                           color: Colors.white,

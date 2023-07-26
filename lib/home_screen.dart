@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
-  HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,8 @@ class HomeScreen extends StatelessWidget {
                   ),
                   child: Image.asset("assets/images/im.png")),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
                 child: Text(
                   "Login",
                   style: TextStyle(
@@ -43,28 +44,28 @@ class HomeScreen extends StatelessWidget {
                     keyboardType: TextInputType.name,
                     decoration: const InputDecoration(
                         hintText: "Username",
-                        hintStyle: TextStyle(color: Colors.black),
+                        hintStyle: TextStyle(color: Colors.grey),
                         enabledBorder: OutlineInputBorder(
-                            borderRadius:BorderRadius.all(Radius.circular(30)),
+                            borderRadius: BorderRadius.all(Radius.circular(30)),
                             borderSide: BorderSide(color: Colors.grey)),
                         focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.black),
                         )),
                   )),
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
                 child: TextFormField(
                   style: const TextStyle(color: Colors.black, fontSize: 18),
                   keyboardType: TextInputType.visiblePassword,
                   decoration: const InputDecoration(
-                    hintText: "Password",
-                    hintStyle: TextStyle(color: Colors.black),
-                    enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(30)),
-                        borderSide: BorderSide(color: Colors.grey)),
-                    focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.black))
-                  ),
+                      hintText: "Password",
+                      hintStyle: TextStyle(color: Colors.grey),
+                      enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(30)),
+                          borderSide: BorderSide(color: Colors.grey)),
+                      focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.black))),
                 ),
               ),
               const SizedBox(
@@ -90,6 +91,7 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(
                 height: 80,
               ),
+              // TextButton(onPressed: onPressed, child: child)
             ],
           ),
         ),
